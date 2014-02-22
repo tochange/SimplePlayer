@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="460px"
+            android:layout_height="580px"
+            android:paddingLeft="20px"
+            android:paddingTop="25px"
+            android:src="@drawable/lizongsheng"
+            android:visibility="gone" >
+        </ImageView>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <SeekBar
+            android:id="@+id/musicSeekBar"
+            android:layout_width="440px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="10px"
+            android:maxHeight="11px"
+            android:minHeight="11px"
+            android:paddingLeft="12px"
+            android:paddingRight="12px"
+            android:progressDrawable="@drawable/seekbar_bg"
+            android:thumb="@drawable/seekbar_thumb" >
+        </SeekBar>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageButton
+            android:id="@+id/imageButtonFavorite"
+            android:layout_width="90px"
+            android:layout_height="100px"
+            android:background="@drawable/favorite_button" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/imageButtonPre"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:background="@drawable/pre_button" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/imageButtonPlay"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:background="@drawable/play_button" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/imageButtonNext"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:background="@drawable/next_button" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/imageButtonRepeat"
+            android:layout_width="90px"
+            android:layout_height="100px"
+            android:background="@drawable/repeat_off_button" >
+        </ImageButton>
+    </LinearLayout>
+
+</LinearLayout>

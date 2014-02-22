@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:text="default name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/all"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/artist"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:focusable="false"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="hhhh"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:focusable="false"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="hhhh"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <SeekBar
+                android:id="@+id/musicSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="10px"
+                android:maxHeight="11px"
+                android:minHeight="11px"
+                android:paddingLeft="12px"
+                android:paddingRight="12px"
+                android:progressDrawable="@drawable/seekbar_bg"
+                android:thumb="@drawable/seekbar_thumb" >
+            </SeekBar>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/imageButtonFavorite"
+                android:layout_width="90px"
+                android:layout_height="100px"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/favorite_button"
+                android:gravity="right|bottom" >
+            </TextView>
+
+            <ImageButton
+                android:id="@+id/imageButtonPause"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:background="@drawable/pause" >
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/imageButtonRepeat"
+                android:layout_width="90px"
+                android:layout_height="100px"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/repeat_off_button" >
+            </ImageButton>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

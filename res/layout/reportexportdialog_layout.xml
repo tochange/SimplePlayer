@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="290dp"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:isScrollContainer="false"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/reportexportdialog_title_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:text="choose path:"
+        android:textSize="18sp" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/reportexportdialog_content_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/reportexportdialog_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/reportexportdialog_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:ellipsize="end"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingLeft="3dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textSize="20sp" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/reportexportdialog_linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.10"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <Button
+                android:id="@+id/reportexportdialog_confirm_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="confirm" >
+            </Button>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:visibility="gone" >
+            </TextView>
+
+            <Button
+                android:id="@+id/reportexportdialog_browser_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="browser" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:visibility="gone" >
+            </TextView>
+
+            <Button
+                android:id="@+id/reportexportdialog_cancel_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="cancel"
+                >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
